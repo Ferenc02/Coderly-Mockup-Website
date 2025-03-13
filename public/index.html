@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Home</title>
+  </head>
+  <body class="light" onload="startFunction()">
+    <a
+      href="#"
+      class="theme-container flex-center"
+      onclick="changeTheme();return false;"
+    >
+      <span class="material-icons" id="theme-icon"></span>
+    </a>
+    <div class="main-container">
+      <header>
+        <div class="mobile-navbar-container flex-center">
+          <div class="company-logo-container" style="padding: 1.5rem"></div>
+
+          <a href="index.html" class="company-name navbar-link">Coderly</a>
+          <div class="menu-container">
+            <a
+              href="#"
+              onclick="triggerMobileNavbar()"
+              class="menu-container link"
+              ><span class="material-icons">menu</span></a
+            >
+          </div>
+        </div>
+
+        <nav class="navbar fade-in-250">
+          <a href="index.html" class="company-name navbar-link">Coderly</a>
+          <a href="index.html" class="navbar-link active">home</a>
+          <a href="pricing.html" class="navbar-link">pricing</a>
+          <a href="sign_up.html" class="navbar-link sign-up-link button"
+            >sign up</a
+          >
+        </nav>
+        <div class="header-content fade-in-500">
+          <div class="header-text-container">
+            <h1 class="title">Code<br />Smarter</h1>
+            <p class="header-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              mollis sodales luctus. Nunc feugiat faucibus ornare. Etiam ut
+              gravida arcu. Ut facilisis purus quam, eu tincidunt urna porttitor
+              vitae. Phasellus ligula nunc, dictum iaculis consequat non,
+              convallis at ex.
+            </p>
+            <a href="#main" class="header-button button">get started</a>
+          </div>
+          <div class="header-image-container">
+            <img
+              src="img/pair_programming.svg"
+              alt="vector art. Two people sitting in front of a computer"
+            />
+            <p class="image-attr">
+              “Pair Programming”, by
+              <a class="link" href="https://undraw.co/illustrations">Undraw</a>
+            </p>
+          </div>
+        </div>
+        <div class="arrow-container">
+          <a href="#main">
+            <img src="img/arrow.svg" alt="navigation arrow" />
+          </a>
+        </div>
+      </header>
+      <main id="main">
+        <div class="card-quote-container top-align">
+          <div class="card-image-container">
+            <img
+              src="img/person_coding.jpg"
+              alt="person sitting in front of a computer and coding"
+            />
+            <p class="image-attr">
+              “programmering utveckla start”, by
+              <a
+                class="link"
+                href="https://pixabay.com/sv/photos/programmering-utveckla-start-593312/"
+                >pixabay</a
+              >
+            </p>
+          </div>
+          <div class="card-text-container">
+            <p class="quote">
+              We’re extremely pleased to be using coderly to teach all the
+              students a fun and innovating way of coding. Using Coderly was
+              quick and simple, with over 50,000 students adopting it within the
+              first two weeks alone.
+            </p>
+            <img src="img/macrosoft.png" alt="macrosoft logo" />
+          </div>
+        </div>
+        <div class="cards-container flex-center">
+          <div class="summary-card-container">
+            <div>
+              <img
+                src="img/man_computer.svg"
+                alt="Vector art of a person sitting in front of a computer"
+              />
+              <h2 class="summary-card-title">Coding</h2>
+            </div>
+            <a href="sign_up.html" class="button summary-card-button"
+              >Learn more</a
+            >
+          </div>
+          <div class="summary-card-container">
+            <div>
+              <img
+                src="img/cheering.svg"
+                alt="Vector art of two people cheering while sitting on a couch"
+              />
+              <h2 class="summary-card-title">Learning</h2>
+            </div>
+            <a href="sign_up.html" class="button summary-card-button"
+              >Learn more</a
+            >
+          </div>
+          <div class="summary-card-container">
+            <div>
+              <img
+                src="img/collab.svg"
+                alt="Vector art of two people collaborating on a project"
+              />
+              <h2 class="summary-card-title">Collaboration</h2>
+            </div>
+            <a href="sign_up.html" class="button summary-card-button"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-child-container">
+          <p class="footer-child-title">coderly</p>
+          <div>
+            <a href="#" class="footer-child-link link">updates</a>
+            <a href="#" class="footer-child-link link">news</a>
+            <a href="#" class="footer-child-link link">partners</a>
+            <a href="#" class="footer-child-link link">about us</a>
+            <a href="#" class="footer-child-link link">contact us</a>
+            <a href="#" class="footer-child-link link">terms of use</a>
+          </div>
+        </div>
+        <div class="footer-child-container">
+          <p class="footer-child-title">social</p>
+          <div>
+            <a href="#" class="footer-child-link link">facebook</a>
+            <a href="#" class="footer-child-link link">twitter</a>
+            <a href="#" class="footer-child-link link">youtube</a>
+          </div>
+        </div>
+        <div class="footer-child-container">
+          <p class="footer-child-title">service</p>
+          <div>
+            <a href="#" class="footer-child-link link">compare</a>
+            <a href="#" class="footer-child-link link">download</a>
+            <a href="#" class="footer-child-link link">feedback</a>
+            <a href="#" class="footer-child-link link">bug report</a>
+          </div>
+        </div>
+        <div class="footer-child-container">
+          <p class="footer-child-title">activity</p>
+          <div>
+            <a href="#" class="footer-child-link link">influences</a>
+            <a href="#" class="footer-child-link link">affiliate</a>
+            <a href="#" class="footer-child-link link">co-branding</a>
+            <a href="#" class="footer-child-link link">honor</a>
+            <a href="#" class="footer-child-link link">giveaway</a>
+          </div>
+        </div>
+        <div class="footer-child-container">
+          <p class="footer-child-title">newsletter subscription</p>
+          <div>
+            <form action="" onsubmit="submitSubscription()" class="footer-form">
+              <input
+                type="email"
+                name="email"
+                placeholder="Subscribe to our newsletter"
+                class="footer-input-email"
+              /><input
+                type="submit"
+                class="footer-submit-button button"
+                value="Subscribe"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+      <p class="footer-copyright footer-child-title">
+        Copyright© 2021 Coderly. All rights reserved
+      </p>
+    </footer>
+  </body>
+</html>

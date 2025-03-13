@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Home</title>
+  </head>
+  <body class="light" onload="startFunction()">
+    <a href="index.html" class="flex-center go-back-button">
+      <span class="material-icons">arrow_back</span>
+    </a>
+
+    <a
+      href="#"
+      class="theme-container flex-center"
+      onclick="changeTheme();return false;"
+    >
+      <span class="material-icons" id="theme-icon"></span>
+    </a>
+    <main class="login flex-center">
+      <div class="login-container fade-in-500">
+        <p class="login-title">Sign in</p>
+        <div class="login-social-container">
+          <div
+            class="footer-submit-button button login-facebook-button login-button"
+          >
+            <span class="material-icons">facebook</span> Sign in with Facebook
+          </div>
+          <div
+            class="footer-submit-button button login-anonymous-button login-button"
+          >
+            <span class="material-icons">fingerprint</span> Sign in as anonymous
+          </div>
+        </div>
+        <p class="login-text">OR</p>
+        <form action="" method="post">
+          <input
+            type="email"
+            name="email"
+            placeholder="Email address"
+            class="footer-input-email"
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            class="footer-input-email"
+          />
+          <button
+            type="submit"
+            class="footer-submit-button button login-submit-button login-button"
+          >
+            <span class="material-icons"> login </span>Sign in
+          </button>
+        </form>
+        <a href="#" class="link login-forgotpassword-text">Forgot password?</a>
+        <hr />
+        <button
+          type="submit"
+          value="Sign up New Account"
+          class="footer-submit-button button login-signup-button login-button"
+        >
+          <span class="material-icons"> person_add </span> Sign up
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
